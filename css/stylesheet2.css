@@ -2,6 +2,10 @@ body {
     width: 100%;
     background-color: lightblue;
     font-family: "Times New Roman", serif;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #02e69a;
+    padding: 5px;
   }
   
   h1 {
@@ -19,6 +23,7 @@ body {
     margin-right: auto;
     width: 350px;
     height: 500px;
+    border-style: solid;
     position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--portrait img { width: 100%; height: auto;}
   
   p.center {
@@ -29,4 +34,5 @@ body {
   a:hover {
     color: rgb(60, 255, 0);
   }
+  
   
