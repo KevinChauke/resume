@@ -1,11 +1,8 @@
 body {
-
   background-color: rgb(255, 255, 255);
   height: 100vh;
   scroll-behavior: smooth;
-
 }
-
 img {
   display: block;
   width: 250px;
@@ -17,7 +14,6 @@ img {
   overflow: hidden;
   border-radius: 10%;
 }
-
 section {
   background-color: rgb(189, 189, 189);
   margin: 2rem 6rem;
@@ -25,11 +21,7 @@ section {
   border-style: solid;
   border-radius: 12px;
   border-color: #585858;
-
-
 }
-
-
 h1 {
   color: rgb(0, 0, 0);
   font-family: "Times New Roman", serif;
@@ -38,13 +30,11 @@ h1 {
   font-style: bold;
   text-indent: 25%;
 }
-
 p.center {
   color: rgb(0, 0, 0);
   font-size: 25px;
   text-indent: 25%;
 }
-
 header {
   margin-top: 3%;
   background-color: rgb(6, 194, 37);
@@ -53,7 +43,6 @@ header {
   border-color: #00ad57;
   padding: 10px 40px;
 }
-
 .topnav {
   border-radius: 12px;
   background-color: #333;
@@ -62,7 +51,6 @@ header {
   top: 0;
   width: 100%;
 }
-
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -70,9 +58,7 @@ header {
   padding: 8px 8px;
   /*text-decoration: none;*/
   font-size: 17px;
-
 }
-
 a:hover {
   color: rgb(60, 255, 0);
 }
