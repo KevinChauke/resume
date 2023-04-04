@@ -1,0 +1,210 @@
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+section {
+    background-color: rgb(189, 189, 189);
+    margin: 2rem 6rem;
+    padding: 2rem 1rem 1rem 1rem;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #585858;
+}
+footer{
+    background-image: url('../images/question-mark.JPEG');
+    background-position: center center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    background-size:contain;
+    
+}
+
+h1 {
+    color: rgb(189, 189, 189);
+    font-family: "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: bold;
+    text-align: center;
+}
+
+p.center {
+    color: rgb(189, 189, 189);
+    font-size: 25px;
+    text-align: center;
+}
+
+.topnav {
+    border-radius: 12px;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 8px;
+    /*text-decoration: none;*/
+    font-size: 17px;
+}
+
+a:hover {
+    color: rgb(60, 255, 0);
+}
+
+/*-----------------------back to top button--------------------------------*/
+
+.top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 80px;
+    margin-left: 90%;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 12px;
+    color: #fff;
+    background: rgb(6, 156, 194);
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+/* --------------------------------Form--------------------------------------------- */
+
+form {
+    height: 100%;
+    width: 30%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #31286f16;
+    padding: 30px;
+    background-image: ;
+}
+
+h3 {
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+[type=email] {
+    width: 100%;
+    padding: 3px 10px;
+    margin: 8px -4px;
+    border-radius: 5px;
+}
+
+[type=info] {
+    width: 100%;
+    padding: 3px 10px;
+    margin: 8px -4px;
+    border-radius: 5px;
+
+}
+
+/*------------------------------Banner-------------------------------------------- */
+
+.outer {
+
+    display: flex;
+    background-color: rgb(170, 238, 187);
+    color: rgb(245, 245, 245);
+    font-size: larger;
+}
+
+.banner1 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+
+    padding-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex: 2;
+}
+
+/*------------------------------Laptop Size MediaQuery---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1025px) {
+    #banner {
+        background-image: url('../images/mobile.PNG');
+        background-size: 100%;
+        height: 53vh;
+        background-repeat: no-repeat;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: larger;
+    }
+    h1{
+        font-size: 45px;
+    }
+}
+
+/*---------------------------Tablet Size MediaQuery-----------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #banner {
+        background-image: url('../images/tablet.PNG');
+        background-size: 100%;
+        height: 85vh;
+        background-repeat: no-repeat;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: auto auto;
+        font-size: larger;
+    }
+}
+
+/*------------------------Mobile Size MediaQuery---------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    #banner {
+        background-image: url('../images/laptop.PNG');
+        background-size: 100%;
+        image-rendering: pixelated;
+        height: 60vh;
+        background-repeat: no-repeat;
+    }
+
+    p.center {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: "Times New Roman", serif;
+        font-size: 37px;
+        font-style: bold;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+    }
+
+}
